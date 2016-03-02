@@ -1,0 +1,10 @@
+INSERT INTO graphiccard VALUES ('EVGA', 'NVIDIA Geforce', 'GTX 960', 4, 129, 1769);
+INSERT INTO graphiccard VALUES ('EVGA', 'NVIDIA Geforce', 'GTX 970', 4, 169, 2790);
+INSERT INTO graphiccard VALUES ('EVGA', 'NVIDIA Geforce', 'GTX 980', 4, 190, 4469);
+INSERT INTO graphiccard VALUES ('EVGA', 'NVIDIA Geforce', 'GTX 980 Ti', 6, 277, 6099);
+INSERT INTO graphiccard VALUES ('EVGA', 'NVIDIA Geforce', 'GTX Titan X', 12, 300, 8449);
+INSERT INTO graphiccard VALUES ('Sapphire', 'Radeon', 'R9 390', 8, 306, 2790);
+INSERT INTO graphiccard VALUES ('Sapphire', 'Radeon', 'R9 390X', 8, 264, 3349);
+INSERT INTO graphiccard VALUES ('Sapphire', 'Radeon', 'R9 380', 4, 267, 1749);
+INSERT INTO graphiccard VALUES ('Sapphire', 'Radeon', 'R9 380', 2, 212, 1599);
+INSERT INTO graphiccard VALUES ('Sapphire', 'Radeon', 'R7 370', 4, 175, 1499);

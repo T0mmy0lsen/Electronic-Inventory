@@ -1,0 +1,8 @@
+INSERT INTO powersupply VALUES ('EVGA', 'SuperNova 1600 G2', 1600, 2490);
+INSERT INTO powersupply VALUES ('Cooler Master', 'V1200', 1200, 1999);
+INSERT INTO powersupply VALUES ('EVGA', 'SuperNova 1300 G2', 1300, 1895);
+INSERT INTO powersupply VALUES ('Crosair', 'CX 750M', 750, 799);
+INSERT INTO powersupply VALUES ('EVGA', 'SuperNova 850 G2', 850, 1190);
+INSERT INTO powersupply VALUES ('Crosair', 'CX 600M', 600, 629);
+INSERT INTO powersupply VALUES ('Crosair', 'CX 500M', 500, 599);
+INSERT INTO powersupply VALUES ('Crosair', 'VS450', 450, 399);
