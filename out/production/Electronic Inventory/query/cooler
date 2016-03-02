@@ -1,0 +1,6 @@
+INSERT INTO cooler VALUES ('Corsair', 'H110i GTX Hydro', 1295);
+INSERT INTO cooler VALUES ('Corsair', 'H110i GT Hydro', 999);
+INSERT INTO cooler VALUES ('Corsair', 'H55 Hydro', 579);
+INSERT INTO cooler VALUES ('Cooler Master', 'Hyper 212', 299);
+INSERT INTO cooler VALUES ('Cooler Master', 'Hyper 612S', 379);
+INSERT INTO cooler VALUES ('Cooler Master', 'V8 GTS', 799);

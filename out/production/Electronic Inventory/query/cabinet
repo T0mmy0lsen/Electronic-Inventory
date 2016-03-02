@@ -1,0 +1,4 @@
+INSERT INTO cabinet VALUES ('Cooler Master', 'Silencio 352', 'M-ATX', 499);
+INSERT INTO cabinet VALUES ('Cooler Master', 'Silencio 452', 'ATX', 649);
+INSERT INTO cabinet VALUES ('Cooler Master', 'CM 690 III', 'ATX', 1195);
+INSERT INTO cabinet VALUES ('Cooler Master', 'Cosmos II', 'E-ATX', 2995);

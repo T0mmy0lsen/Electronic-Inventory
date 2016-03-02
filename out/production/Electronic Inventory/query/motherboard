@@ -1,0 +1,16 @@
+INSERT INTO motherboard VALUES ('ASUS', 'Rampage V Extreme', 'LGA2011 v3', 'E-ATX', 'DDR4', 4049, false);
+INSERT INTO motherboard VALUES ('MSI', 'Godlike Gaming', 'LGA2011 v3', 'E-ATX', 'DDR4', 3999, false);
+INSERT INTO motherboard VALUES ('ASUS', 'Maximus VIII Extreme', 'LGA2011 v3', 'E-ATX', 'DDR4', 3590, false);
+INSERT INTO motherboard VALUES ('ASUS', 'X99-Deluxe', 'LGA2011 v3', 'ATX', 'DDR4', 3199, false);
+INSERT INTO motherboard VALUES ('ASUS', 'Sabertooth X99', 'LGA2011 v3', 'ATX', 'DDR4', 3049, true);
+INSERT INTO motherboard VALUES ('Gigabyte', 'GA-X99M-Gaming 5', 'LGA2011 v3', 'M-ATX', 'DDR4', 1799, false);
+INSERT INTO motherboard VALUES ('MSI', 'Maximus VIII Assembly', 'LGA1151', 'ATX', 'DDR4', 4999, false);
+INSERT INTO motherboard VALUES ('MSI', 'Z170A Krait Gaming', 'LGA1151', 'ATX', 'DDR4', 1290, false);
+INSERT INTO motherboard VALUES ('ASUS', 'Z170-P', 'LGA1151', 'ATX', 'DDR4', 1049, true);
+INSERT INTO motherboard VALUES ('ASUS', 'ROG Maximus VIII Hero', 'LGA1151', 'ATX', 'DDR4', 1799, true);
+INSERT INTO motherboard VALUES ('ASUS', 'ROG Maximus VIII Formula', 'LGA1151', 'ATX', 'DDR4', 2999, false);
+INSERT INTO motherboard VALUES ('MSI', 'C236M Workstation', 'LGA1151', 'M-ATX', 'DDR3', 1349, true);
+INSERT INTO motherboard VALUES ('ASUS', 'H97M-E', 'LGA1150', 'M-ATX', 'DDR3', 789, true);
+INSERT INTO motherboard VALUES ('MSI', 'Z97M-G43', 'LGA1150', 'M-ATX', 'DDR3', 797, false);
+INSERT INTO motherboard VALUES ('Gigabyte', 'GA-Z97P-D3', 'LGA1150', 'ATX', 'DDR3', 713, false);
+INSERT INTO motherboard VALUES ('ASUS', 'H97-PLUS', 'LGA1150', 'ATX', 'DDR3', 867, true);
