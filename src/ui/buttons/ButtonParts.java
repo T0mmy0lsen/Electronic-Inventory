@@ -1,7 +1,6 @@
 package ui.buttons;
 
-import Userinterface;
-
+import logic.ActionHandler;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -19,6 +18,6 @@ public class ButtonParts extends JButton implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        Userinterface.buttonClicked(text);
+        ActionHandler.buttonClicked(text);
     }
 }

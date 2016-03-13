@@ -1,9 +1,8 @@
 package logic;
 
 import models.Parts;
-import Userinterface;
+import ui.Userinterface;
 import ui.listview.ListView;
-
 import javax.swing.*;
 import java.util.ArrayList;
 

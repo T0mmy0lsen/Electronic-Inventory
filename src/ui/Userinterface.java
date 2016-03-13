@@ -1,3 +1,5 @@
+package ui;
+
 import logic.Constraints;
 import ui.buttons.ButtonParts;
 import ui.frames.*;
@@ -48,7 +50,7 @@ public class Userinterface {
         Constraints.add(mainJPanel, listview,               0, 4, 8, 1, GridBagConstraints.CENTER, GridBagConstraints.BOTH, 1, 0.4);
 
         // ------------------------------------------------------------
-        // adding jPanel_main to the main mainFrame.
+        // adding mainJPanel to the mainFrame.
         mainFrame.add(mainJPanel);
     }
 }
