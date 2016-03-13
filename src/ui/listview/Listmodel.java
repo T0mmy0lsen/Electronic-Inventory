@@ -2,18 +2,18 @@ package ui.listview;
 
 import logic.Constraints;
 import models.Parts;
-import ui.frames.Frame;
+import ui.frames.MainFrame;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class Listmodel extends JPanel implements ListCellRenderer<Parts> {
+public class ListModel extends JPanel implements ListCellRenderer<Parts> {
 
-    int height = (int) (Frame.height() * ((double) 1/30));
-    Labels description_label = new Labels();
-    Labels price_label = new Labels();
+    int height = (int) (MainFrame.height() * ((double) 1/30));
+    ListLabel description_label = new ListLabel();
+    ListLabel price_label = new ListLabel();
 
-    public Listmodel() {
+    public ListModel() {
         setPreferredSize(new Dimension(getWidth(), height));
         setLayout(new GridBagLayout());
         setBackground(Color.WHITE);
