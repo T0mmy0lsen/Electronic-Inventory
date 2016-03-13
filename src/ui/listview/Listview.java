@@ -1,7 +1,7 @@
 package ui.listview;
 
 import models.Parts;
-import ui.Userinterface;
+import Userinterface;
 
 import javax.swing.*;
 import java.util.ArrayList;
@@ -24,8 +24,13 @@ public class Listview extends JList {
         selectionModel.addListSelectionListener(e -> {
             if (e.getValueIsAdjusting()) {
                 int selectedRow = getSelectedIndex();
-                Userinterface.cpuSelected(items.get(selectedRow));
+                itemSelected(items.get(selectedRow));
             }
         });
+    }
+
+    public void itemSelected(Parts parts){
+        String was = parts.getType();
+        System.out.println(was);
     }
 }

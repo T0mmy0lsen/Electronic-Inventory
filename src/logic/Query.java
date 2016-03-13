@@ -1,4 +1,4 @@
-package database;
+package logic;
 
 import models.Parts;
 
