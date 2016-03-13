@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.net.URL;
 
-public class Frame extends JFrame{
+public class MainFrame extends JFrame{
 
     static GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
     static int width = gd.getDisplayMode().getWidth();
@@ -14,7 +14,7 @@ public class Frame extends JFrame{
         return height;
     }
 
-    public Frame() throws HeadlessException {
+    public MainFrame() throws HeadlessException {
         super("Electro™");
 
         URL iconURL = getClass().getResource("/assets/logo_s.png");

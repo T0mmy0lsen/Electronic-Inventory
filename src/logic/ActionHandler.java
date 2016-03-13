@@ -2,7 +2,7 @@ package logic;
 
 import models.Parts;
 import Userinterface;
-import ui.listview.Listview;
+import ui.listview.ListView;
 
 import javax.swing.*;
 import java.util.ArrayList;
@@ -19,7 +19,7 @@ public class ActionHandler {
         // Update the UI.
         SwingUtilities.invokeLater(() -> {
             Userinterface.listview.revalidate();
-            Userinterface.listview.setViewportView(new Listview(listItems));
+            Userinterface.listview.setViewportView(new ListView(listItems));
         });
     }
 

@@ -1,7 +1,7 @@
 import logic.Constraints;
 import ui.buttons.ButtonParts;
 import ui.frames.*;
-import ui.frames.Frame;
+import ui.frames.MainFrame;
 import javax.swing.*;
 import java.awt.*;
 
@@ -13,8 +13,8 @@ public class Userinterface {
 
         // ------------------------------------------------------------
         // All Items used for the UI.
-        Frame frame = new Frame();
-        JMain jPanel_main = new JMain();
+        MainFrame frame = new MainFrame();
+        MainJPanel jPanel_main = new MainJPanel();
         JPanel header = new JPanel();
         JPanel infoPanel = new JPanel();
         JPanel infoPanel_pic = new JPanel();

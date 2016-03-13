@@ -6,9 +6,9 @@ import Userinterface;
 import javax.swing.*;
 import java.util.ArrayList;
 
-public class Listview extends JList {
+public class ListView extends JList {
 
-    public Listview(ArrayList<Parts> items) {
+    public ListView(ArrayList<Parts> items) {
         DefaultListModel<Parts> list = new DefaultListModel<>();
 
         for(int i = 0; i < items.size(); i++) {
@@ -16,7 +16,7 @@ public class Listview extends JList {
         }
 
         setModel(list);
-        setCellRenderer(new Listmodel());
+        setCellRenderer(new ListModel());
 
         ListSelectionModel selectionModel = this.getSelectionModel();
         selectionModel.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
