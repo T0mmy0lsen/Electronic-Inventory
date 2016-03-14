@@ -13,13 +13,14 @@ public class ActionHandler {
 
     public static void buttonClicked(String text){
         // New list for the parts returned by the query.
-        listItems = new ArrayList<Parts>();
-        listItems = query.getAll("SELECT * FROM " + text);
-        // Update the UI.
-        SwingUtilities.invokeLater(() -> {
-            Userinterface.listview.revalidate();
-            Userinterface.listview.setViewportView(new ListView(listItems));
-        });
+        new Thread(() -> {
+            listItems = new ArrayList<Parts>();
+            listItems = query.getAll("SELECT * FROM " + text);
+            // Update the UI.
+            SwingUtilities.invokeLater(() -> {
+                Userinterface.listview.revalidate();
+                Userinterface.listview.setViewportView(new ListView(listItems));
+            });
+        }).start();
     }
-
 }
