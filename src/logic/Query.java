@@ -26,7 +26,7 @@ public class Query {
     public ArrayList<Parts> getAll(String query){
 
         String manufacturer = "", modelname = "", size = "", socket = "", memory_type = "", type = "";
-        int price = 0, cache = 0, power_com = 0, power_out = 0, cores = 0, memory = 0;
+        int price = 0, cache = 0, power_com = 0, power_out = 0, cores = 0, memory = 0, id = 0;
         double speed = 0;
         boolean cooler = false, onboard_graphic = false;
 
@@ -47,6 +47,8 @@ public class Query {
             while(rs.next()){
                 for(int i = 1; i < count+1; i++) {
                     switch (columns.get(i-1)){
+                        case "id": id = rs.getInt(i);
+                            break;
                         case "manufacturer": manufacturer = rs.getString(i);
                             break;
                         case "modelname": modelname = rs.getString(i);
@@ -79,7 +81,7 @@ public class Query {
                             break;
                     }
                 }
-                list.add(new Parts(manufacturer, modelname, size, socket, memory_type, type, price, cache, power_com, power_out, speed, cores, memory, cooler, onboard_graphic));
+                list.add(new Parts(id, manufacturer, modelname, size, socket, memory_type, type, price, cache, power_com, power_out, speed, cores, memory, cooler, onboard_graphic));
             }
             return list;
         } catch (SQLException | NullPointerException ignored) {

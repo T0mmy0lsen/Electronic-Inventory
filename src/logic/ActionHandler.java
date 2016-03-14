@@ -1,5 +1,6 @@
 package logic;
 
+import models.BuildItems;
 import models.BuildPrice;
 import models.Parts;
 import ui.Userinterface;
@@ -14,7 +15,9 @@ public class ActionHandler {
 
     static Query query = new Query();
     static ArrayList<Parts> listItems;
-    static BuildPrice build = new BuildPrice();
+    static BuildPrice buildPrice = new BuildPrice();
+    static BuildItems buildItems = new BuildItems();
+    public static ArrayList<Integer> itemIds;
 
     public static void buttonClicked(String text){
         // New list for the parts returned by the query.
@@ -32,14 +35,17 @@ public class ActionHandler {
         new Thread(() -> {
             switch (type) {
                 case "cpu":
-                    build.setCpu(parts.getPrice());
+                    buildPrice.setCpu(parts.getPrice());
+                    buildItems.setCpu(parts.getId());
                     break;
                 case "motherboard":
-                    build.setMotherboard(parts.getPrice());
+                    buildPrice.setMotherboard(parts.getPrice());
+                    buildItems.setCpu(parts.getId());
                     break;
             }
+            itemIds = buildItems.getIds();
             SwingUtilities.invokeLater(() -> {
-                JPrice.label.setText("<html><div style='text-align: center;'>" + build.getPrice() + "</html>");
+                JPrice.label.setText("<html><div style='text-align: center;'>" + buildPrice.getPrice() + "</html>");
             });
         }).start();
     }

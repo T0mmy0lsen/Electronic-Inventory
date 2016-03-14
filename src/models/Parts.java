@@ -2,11 +2,12 @@ package models;
 
 public class Parts {
     String manufacturer = null, modelname = null, size = null, socket = null, memory_type = null, type = null;
-    int price = 0, cache = 0, power_com = 0, power_out = 0, cores = 0, memory = 0;
+    int price = 0, cache = 0, power_com = 0, power_out = 0, cores = 0, memory = 0, id = 0;
     double speed = 0;
     boolean cooler = false, onboard_graphic = false;
 
-    public Parts(String manufacturer, String modelname, String size, String socket, String memory_type, String type, int price, int cache, int power_com, int power_out, double speed, int cores, int memory, boolean cooler, boolean onboard_graphic) {
+    public Parts(int id, String manufacturer, String modelname, String size, String socket, String memory_type, String type, int price, int cache, int power_com, int power_out, double speed, int cores, int memory, boolean cooler, boolean onboard_graphic) {
+        this.id = id;
         this.manufacturer = manufacturer;
         this.modelname = modelname;
         this.size = size;
@@ -22,6 +23,10 @@ public class Parts {
         this.memory = memory;
         this.cooler = cooler;
         this.onboard_graphic = onboard_graphic;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getManufacturer() {
