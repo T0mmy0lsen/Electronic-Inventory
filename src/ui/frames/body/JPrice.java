@@ -17,7 +17,8 @@ public class JPrice extends JPanel{
     }
 
     public JPrice() {
-        setLayout(new GridBagLayout());
-        Constraints.add(this, label,         0, 0, 1, 1, GridBagConstraints.CENTER, GridBagConstraints.BOTH, 1, 1);
+        setLayout(new BorderLayout());
+        label.setHorizontalAlignment(SwingConstants.CENTER);
+        this.add(label, BorderLayout.CENTER);
     }
 }

@@ -14,7 +14,7 @@ public class ActionHandler {
 
     static Query query = new Query();
     static ArrayList<Parts> listItems;
-    static BuildPrice build = new BuildPrice(0);
+    static BuildPrice build = new BuildPrice();
 
     public static void buttonClicked(String text){
         // New list for the parts returned by the query.
@@ -34,9 +34,12 @@ public class ActionHandler {
                 case "cpu":
                     build.setCpu(parts.getPrice());
                     break;
+                case "motherboard":
+                    build.setMotherboard(parts.getPrice());
+                    break;
             }
             SwingUtilities.invokeLater(() -> {
-                JPrice.label.setText(build.getPrice() + " kr");
+                JPrice.label.setText("<html><div style='text-align: center;'>" + build.getPrice() + "</html>");
             });
         }).start();
     }
