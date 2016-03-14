@@ -75,6 +75,8 @@ public class Query {
                             break;
                         case "onboard_graphics": onboard_graphic = rs.getBoolean(i);
                             break;
+                        default:
+                            break;
                     }
                 }
                 list.add(new Parts(manufacturer, modelname, size, socket, memory_type, type, price, cache, power_com, power_out, speed, cores, memory, cooler, onboard_graphic));

@@ -9,12 +9,10 @@ import java.awt.*;
 
 public class ListModel extends JPanel implements ListCellRenderer<Parts> {
 
-    int height = (int) (MainFrame.height() * ((double) 1/30));
     ListLabel description_label = new ListLabel();
     ListLabel price_label = new ListLabel();
 
     public ListModel() {
-        setPreferredSize(new Dimension(getWidth(), height));
         setLayout(new GridBagLayout());
         setBackground(Color.WHITE);
         setBorder(BorderFactory.createEmptyBorder(3, 3, 3, 3));
